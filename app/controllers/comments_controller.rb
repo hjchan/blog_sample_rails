@@ -17,7 +17,8 @@ class CommentsController < ApplicationController
   end
 
   def latest
-  	@comments = Comment.latest
+  	comments = Comment.latest
+  	render json: {comments: comments}
   end
 
   private
