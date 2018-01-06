@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get 'static/contact'
 
   root 'articles#index'
+
+  get "comments/latest", format: :json
 end

@@ -1,0 +1,16 @@
+<div class="card my-4">
+  <h5 class="card-header">Latest Comments</h5>
+  <div class="card-body mt-0 pt-1" ng-controller="SideBarController">
+    <ul class="list-group list-group-flush" ng-repeat="comment in comments">
+      <li class="list-group-item">
+        <div class="media">
+          <img ng-src="{{ comment.avatar_url }}" class="align-self-start mr-3 rounded-circle" style="height: 64">
+          <div class="media-body">
+            <h5 class="mt-0">{{ comment.commenter }}</h5>
+            {{ comment.body }}
+          </div><!-- /.media-body -->
+        </div><!-- /.media -->
+      </li>
+    </ul>
+  </div>
+</div>
