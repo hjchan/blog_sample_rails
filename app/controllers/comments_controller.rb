@@ -1,7 +1,13 @@
 class CommentsController < ApplicationController
+  def index
+  	article = Article.find(params[:article_id])
+    comments = article.comments.latest
+    render json: {comments: comments}
+  end
+
   def create
     @article = Article.find(params[:article_id])
-    @comment = @article.comments.create(comment_params)
+    @comment = @article.comments.new(comment_params)
 
     @comment.avatar_url = "https://flathash.com/#{@comment.commenter}"
     @comment.save

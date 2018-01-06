@@ -26,4 +26,4 @@
 
 
 <!-- Single Comment -->
-<%= render @article.comments.latest %>
+<div id="article_comments" data-article-id="<%= @article.id %>" ng-include="'article_comments.html'"></div>
