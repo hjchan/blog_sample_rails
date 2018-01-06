@@ -1,0 +1,17 @@
+<div class="card" ng-controller="CommentBoxController">
+  <h5 class="card-header">Leave a Comment:</h5>
+  <div class="card-body">
+    <form ng-submit="addComment()" accept-charset="UTF-8">
+      <input name="utf8" value="✓" type="hidden">
+      <div class="form-group">
+        <label for="comment_commenter">Your name</label>
+        <input class="form-control" ng-model="commenter" type="text">
+      </div>
+      <div class="form-group">
+        <label for="comment_body">Comment</label>
+        <textarea class="form-control" rows="3" ng-model="body"></textarea>
+      </div>
+      <input name="commit" value="Submit" class="btn btn-primary" data-disable-with="Submit" type="submit">
+    </form>
+  </div>
+</div>

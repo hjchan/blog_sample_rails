@@ -22,8 +22,8 @@
 <hr>
 
 <!-- Comments Form -->
-<%= render 'comments/form' %>
+<div ng-include="'comment_box.html'"></div>
 
 
 <!-- Single Comment -->
-<div id="article_comments" data-article-id="<%= @article.id %>" ng-include="'article_comments.html'"></div>
+<div id="article_comments" ng-include="'article_comments.html'"></div>
