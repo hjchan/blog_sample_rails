@@ -1,1 +1,1 @@
-var app = angular.module('blogSample', [])
+var app = angular.module('blogSample', ['templates'])
