@@ -15,4 +15,5 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require angular
-//= require_tree .
+//= require angular-app/app
+//= require_tree ./angular-app/controllers

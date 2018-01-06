@@ -1,5 +1,5 @@
 <footer class="py-4 bg-dark">
   <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; My Rails Blog 2017</p>
+    <p class="m-0 text-center text-white" ng-controller="FooterController">{{ text }}{{ date | date: 'yyyy' }}</p>
   </div><!-- /.container -->
 </footer>
